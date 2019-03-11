@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/g_cssreset-min.css">
+	<link rel="stylesheet" href="css/g_common.css">
+	<link rel="stylesheet" href="css/g_list.css">
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="js/jquery1.42.min.js"></script>
+	<script src="js/g_common.js"></script>
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<nav class="nav" id="topnav">
+				<h1 class="logo">我的博客</h1>
+				<li><a href="#">博客首页</a></li>
+				<li><a href="#">关于我</a></li>
+				<li><a href="#">我的文章</a>
+					<ul class="sub_nav" >
+						<li><a href="#">javascript</a></li>
+						<li><a href="#">HTML5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">留言</a></li>
+			</nav>
+		</div>
+	</header>
+	<div class="pagebg pagebg1"></div>
+	<div class="clr container">
+	
+		<div class="blogsbox fl">
+			<div class="content">
+            <div class="dqwz "><a href="/">首页</a>&nbsp;&gt;&gt;&nbsp;<a href="#">正文</a></div>
+            <div class="article">
+                <h1 class="article-title">我是title</h1>
+                <div class="article-date">
+                    <span>日期：2018-09-10 12:20:11</span>
+                    <span>作者：admin</span>
+                    <span>阅读：11</span>
+                    <span>评论：5</span>
+                </div>
+                <div class="article-content">
+                    <p>我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</p>
+                </div>
+            </div>
+        </div>
+        <div class="pinglun">
+            <div class="pinglunTitle">
+                <h3>评论</h3>
+                <p >一共有<span class="messageCount">3</span>条评论</p>
+            </div>
+            <p class="username">zmouse</p>
+            <div class="inputText">
+                <textarea id="messageContent"></textarea>
+                <input type="hidden" id="contentId" value="{{content.id}}">
+                <button id="messageBtn" class = "submit" >提交</button>
+            </div>
+            <div class="longin">你还没有登录,请登录!</div>
+            <div class="pinglunList">
+                <p>还没有评论</p>
+                <div class="pinglunContent">
+                    <div class="pinglunTitle">
+                        <h3>${comments[i].username}</h3>
+                        <p>${dateTime}</p>
+                    </div>
+                    <div class="pinglunDes">
+                        ${comments[i].content}
+                    </div>
+                </div>
+            </div>
+
+            <div class="fy">
+                <ul>
+                    <li class="previous">
+                        <a href="/?category={{category}}&page={{page-1}}">上一页</a>
+                    </li>
+                    <li>1/2</li>
+                    <li class="next">
+                        <a href="/?category={{category}}&page={{page+1}}">下一页</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		</div>
+		<div class="sidebar fr">
+			<div id="userInfo" style="display:none;">
+                <p>用户信息:<span class="username">admin</span>
+                    <span class="colDark logout"><a href="javascript:;" id="logout">退出</a></span>
+                </p>
+                   <!--  <p class="colDrak info">你好管理员，<a href="/admin">进入管理</a></p> -->
+                    <p class="colDrak info">你好，欢迎光临我的博客！</p>
+            </div>
+			<div class="login inputButton" style="display:none;">
+				<h2 class="hometitle">登录
+				</h2>
+				<form action="">
+					<label for="username"><span>用户名：</span><input type="text" id="username" name="username"></label> 
+					<label for="password"><span>密码：</span><input type="password" id="password" name="password"></label> 
+					<div class="icontap">
+					<input type="submit" value="登录">
+					<p class="colMint"><a href="javascript:void(0);">还没账号？这里注册！！</a></p>
+					<p class="colWarning"></p>
+					</div>
+				</form>
+			</div>
+			<div class="register inputButton" >
+				<h2 class="hometitle">注册
+				</h2>
+				<form action="">
+					<label for="username"><span>用户名：</span><input type="text" id="username" name="username"></label> 
+					<label for="password"><span>密码：</span><input type="password" id="password" name="password"></label> 
+					<label for="repassword"><span>确认密码：</span><input type="password" id="repassword" name="repassword"></label> 
+					<div class="icontap">
+					<input type="button" value="注册">
+					<p class="colMint"><a href="javascript:void(0);">已有账号？这里登录！！</a></p>
+					<p class="colWarning"></p>
+					</div> 
+				</form>
+			</div>
+			<div class="zhuanti">
+				<h2 class="hometitle">特别推荐
+				</h2>
+				<ul>
+					<li><i><img src="img/banner01.jpg" alt=""></i>
+						<p>
+							帝国cms调用方法
+							<span><a href="#">阅读</a></span>
+						</p>
+					</li>
+					<li><i><img src="img/banner01.jpg" alt=""></i>
+						<p>
+							帝国cms调用方法
+							<span><a href="#">阅读</a></span>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="biaoqian">
+				<h2 class="hometitle">标签云
+				</h2>
+				<ul>
+					<a href="#">html5</a>
+					<a href="#">css3</a>
+					<a href="#">javascript</a>
+					<a href="#">jquery</a>
+					<a href="#">mysql</a>
+					<a href="#">vue</a>
+					<a href="#">node</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<p>gys个人博客</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,1 @@
+ jQuery(".banner").slide({mainCell:".fader",titCell:".pager_list li",titOnClassName:"active",effect:"fold",autoPlay:true,easing:"easeInQuint",trigger:"click",interTime:"5000",prevCell:".prev",nextCell:".next"});

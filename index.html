@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/g_cssreset-min.css">
+	<link rel="stylesheet" href="css/g_common.css">
+	<link rel="stylesheet" href="css/g_index.css">
+	<script src="js/jquery1.42.min.js"></script>
+	<script src="js/g_common.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<nav class="nav" id="topnav">
+				<h1 class="logo">我的博客</h1>
+				<li><a href="#">博客首页</a></li>
+				<li><a href="#">关于我</a></li>
+				<li><a href="#">我的文章</a>
+					<ul class="sub_nav" >
+						<li><a href="#">javascript</a></li>
+						<li><a href="#">HTML5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">留言</a></li>
+			</nav>
+		</div>
+	</header>
+	<article class="clr">
+		<div class="picsbox clr">
+			<div class="banner fl">
+				<div id="banner" class="fader">
+					<li class="slide" ><a href="#"><img src="img/banner01.jpg" alt="">
+					<span class="imginfo">网页中图片属性固定宽度，如何用js改变大小1</span>
+					</a></li>
+					<li class="slide"><a href="#"><img src="img/banner02.jpg" alt=""></a><span class="imginfo">网页中图片属性固定宽度，如何用js改变大小2</span></li>
+					<li class="slide"><a href="#"><img src="img/banner03.jpg" alt=""></a><span class="imginfo">网页中图片属性固定宽度，如何用js改变大小3</span></li>
+				</div>
+				<div class="banner_controls">
+						<div class="page prev"><</div>
+						<div class="page next">></div>
+						<ul class="pager_list">
+							<li class="page active">0</li>
+							<li class="page">1</li>
+							<li class="page">2</li>
+						</ul>
+					</div>
+			</div>
+			<script src="js/g_index.js"></script>
+			<div class="toppic fr">
+				<li>
+					<a href="/" traget="_blank">
+						<i>
+							<img src="img/toppic01.jpg" alt="">
+						</i>
+						<h2>别让这些闹心的套路，毁了你的设计！</h2>
+						<span>学无止境</span>
+					</a>
+				</li>
+				<li>
+					<a href="/" traget="_blank">
+						<i>
+							<img src="img/toppic01.jpg" alt="">
+						</i>
+						<h2>别让这些闹心的套路，毁了你的设计！</h2>
+						<span>学无止境</span>
+					</a>
+				</li>
+			</div>
+		</div>
+		<div class="blogsbox fl">
+			<div class="blogs">
+				<h3 class="blogtitle"><a href="#" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
+				<span class="blogpic">
+					<a href="#">
+						<img src="img/toppic01.jpg" alt="">
+					</a>
+				</span>
+				<div class="blogR fr">
+				<p class="blogtext">
+					如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！... 
+				</p>
+				<div class="bloginfo">
+					<ul>
+						<li class="author"><a href="#">gys</a></li>
+						<li class="lmname"><a href="#">javascript</a></li>
+						<li class="timer">2018-5-13</li>
+						<li class="view">
+							<span>34567</span>
+							已阅读
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class="blogs">
+				<h3 class="blogtitle"><a href="#" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
+				<p class="blogtext">
+					如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！... 
+				</p>
+				<div class="bloginfo">
+					<ul>
+						<li class="author"><a href="#">gys</a></li>
+						<li class="lmname"><a href="#">javascript</a></li>
+						<li class="timer">2018-5-13</li>
+						<li class="view">
+							<span>34567</span>
+							已阅读
+						</li>
+					</ul>
+				</div>
+				</div>
+				 <div class="fy">
+            <ul>
+                <li class="previous">
+                  <!--   <a href="javascript:;">没有上一页了</a></li> -->
+                    <a href="/?category={{category}}&page={{page-1}}">上一页</a></li>
+                <li><strong>{{page}}/{{pages}}</strong></li>
+                <li class="next">  
+                  <!--   <a href="javascript:;">没有下一页了</a> -->
+                    <a href="/?category={{category}}&page={{page+1}}">下一页</a> 
+                </li>
+            </ul>
+        </div>
+		</div>
+		<div class="sidebar fr">
+			<div id="userInfo" style="display:none;">
+                <p>用户信息:<span class="username">admin</span>
+                    <span class="colDark logout"><a href="javascript:;" id="logout">退出</a></span>
+                </p>
+                   <!--  <p class="colDrak info">你好管理员，<a href="/admin">进入管理</a></p> -->
+                    <p class="colDrak info">你好，欢迎光临我的博客！</p>
+            </div>
+			<div class="login inputButton" >
+				<h2 class="hometitle">登录
+				</h2>
+				<form action="">
+					<label for="username"><span>用户名：</span><input type="text" id="username" name="username"></label> 
+					<label for="password"><span>密码：</span><input type="password" id="password" name="password"></label> 
+					<div class="icontap">
+					<input type="submit" value="登录">
+					<p class="colMint"><a href="javascript:void(0);">还没账号？这里注册！！</a></p>
+					<p class="colWarning"></p>
+					</div>
+				</form>
+			</div>
+			<div class="register inputButton" style="display:none;">
+				<h2 class="hometitle">注册
+				</h2>
+				<form action="">
+					<label for="username"><span>用户名：</span><input type="text" id="username" name="username"></label> 
+					<label for="password"><span>密码：</span><input type="password" id="password" name="password"></label> 
+					<label for="repassword"><span>确认密码：</span><input type="password" id="repassword" name="repassword"></label> 
+					<div class="icontap">
+					<input type="button" value="注册">
+					<p class="colMint"><a href="javascript:void(0);">已有账号？这里登录！！</a></p>
+					<p class="colWarning"></p>
+					</div> 
+				</form>
+			</div>
+			<div class="zhuanti">
+				<h2 class="hometitle">特别推荐
+				</h2>
+				<ul>
+					<li><i><img src="img/banner01.jpg" alt=""></i>
+						<p>
+							帝国cms调用方法
+							<span><a href="#">阅读</a></span>
+						</p>
+					</li>
+					<li><i><img src="img/banner01.jpg" alt=""></i>
+						<p>
+							帝国cms调用方法
+							<span><a href="#">阅读</a></span>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="biaoqian">
+				<h2 class="hometitle">标签云
+				</h2>
+				<ul>
+					<a href="#">html5</a>
+					<a href="#">css3</a>
+					<a href="#">javascript</a>
+					<a href="#">jquery</a>
+					<a href="#">mysql</a>
+					<a href="#">vue</a>
+					<a href="#">node</a>
+				</ul>
+			</div>
+		</div>
+	</article>
+	<footer class="footer">
+		<p>gys个人博客</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/g_cssreset-min.css">
+	<link rel="stylesheet" href="css/g_common.css">
+	<link rel="stylesheet" href="css/g_index.css">
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="js/jquery1.42.min.js"></script>
+	<script src="js/g_common.js"></script>
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<nav class="nav" id="topnav">
+				<h1 class="logo">我的博客</h1>
+				<li><a href="#">博客首页</a></li>
+				<li><a href="#">关于我</a></li>
+				<li><a href="#">我的文章</a>
+					<ul class="sub_nav" >
+						<li><a href="#">javascript</a></li>
+						<li><a href="#">HTML5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">留言</a></li>
+			</nav>
+		</div>
+	</header>
+	<article class="clr">
+		<div class="picsbox clr">
+			<div class="banner fl">
+				<div id="banner" class="fader">
+					<li class="slide" style="opacity:1;z-index:3;"><a href="#"><img src="img/banner01.jpg" alt="">
+					<span class="imginfo">网页中图片属性固定宽度，如何用js改变大小1</span>
+					</a></li>
+					<li class="slide"><a href="#"><img src="img/banner02.jpg" alt=""></a><span class="imginfo">网页中图片属性固定宽度，如何用js改变大小2</span></li>
+					<li class="slide"><a href="#"><img src="img/banner03.jpg" alt=""></a><span class="imginfo">网页中图片属性固定宽度，如何用js改变大小3</span></li>
+					<div class="banner_controls">
+						<div class="page prev"><</div>
+						<div class="page next">></div>
+						<ul class="pager_list">
+							<li class="page active">0</li>
+							<li class="page">1</li>
+							<li class="page">2</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script src="js/g_index.js"></script>
+			<div class="toppic fr">
+				<li>
+					<a href="/" traget="_blank">
+						<i>
+							<img src="img/toppic01.jpg" alt="">
+						</i>
+						<h2>别让这些闹心的套路，毁了你的设计！</h2>
+						<span>学无止境</span>
+					</a>
+				</li>
+				<li>
+					<a href="/" traget="_blank">
+						<i>
+							<img src="img/toppic01.jpg" alt="">
+						</i>
+						<h2>别让这些闹心的套路，毁了你的设计！</h2>
+						<span>学无止境</span>
+					</a>
+				</li>
+			</div>
+		</div>
+
+		<div class="blogsbox fl">
+			<div class="blogs">
+				<h3 class="blogtitle"><a href="#" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
+				<span class="blogpic">
+					<a href="#">
+						<img src="img/toppic01.jpg" alt="">
+					</a>
+				</span>
+				<div class="blogR fr">
+				<p class="blogtext">
+					如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！... 
+				</p>
+				<div class="bloginfo">
+					<ul>
+						<li class="author"><a href="#">gys</a></li>
+						<li class="lmname"><a href="#">javascript</a></li>
+						<li class="timer">2018-5-13</li>
+						<li class="view">
+							<span>34567</span>
+							已阅读
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class="blogs">
+				<h3 class="blogtitle"><a href="#" target="_blank">别让这些闹心的套路，毁了你的网页设计!</a></h3>
+				<p class="blogtext">
+					如图，要实现上图效果，我采用如下方法：1、首先在数据库模型，增加字段，分别是图片2，图片3。2、增加标签模板，用if，else if 来判断，输出。思路已打开，样式调用就可以多样化啦！... 
+				</p>
+				<div class="bloginfo">
+					<ul>
+						<li class="author"><a href="#">gys</a></li>
+						<li class="lmname"><a href="#">javascript</a></li>
+						<li class="timer">2018-5-13</li>
+						<li class="view">
+							<span>34567</span>
+							已阅读
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar fr">
+			<div class="zhuanti">
+				<h2 class="hometitle">特别推荐
+				</h2>
+				<ul>
+					<li><i><img src="img/banner01.jpg" alt=""></i>
+						<p>
+							帝国cms调用方法
+							<span><a href="#">阅读</a></span>
+						</p>
+					</li>
+					<li><i><img src="img/banner01.jpg" alt=""></i>
+						<p>
+							帝国cms调用方法
+							<span><a href="#">阅读</a></span>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="biaoqian">
+				<h2 class="hometitle">标签云
+				</h2>
+				<ul>
+					<a href="#">html5</a>
+					<a href="#">css3</a>
+					<a href="#">javascript</a>
+					<a href="#">jquery</a>
+					<a href="#">mysql</a>
+					<a href="#">vue</a>
+					<a href="#">node</a>
+				</ul>
+			</div>
+		</div>
+	</article>
+	<footer class="footer">
+		<p>gys个人博客</p>
+	</footer>
+</body>
+</html>

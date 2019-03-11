@@ -1,0 +1,38 @@
+.container {
+	margin:20px auto;
+	width:1140px;
+}
+/*页面背景*/
+.pagebg {
+	width:100%;
+	height:200px;
+	margin-top:80px;
+}
+.pagebg1 {
+	background:url(../img/page_bg.jpg) no-repeat;
+	background-size:cover;
+	background-position: top center;
+}
+
+/*view*/
+.content { background:#fff;padding:20px;margin-bottom:20px;}
+.dqwz { line-height: 35px;text-align:right;padding-right:10px; }
+.article-title { font:bold 20px/2 "微软雅黑";color:#666;text-align:center; }
+.article-date { text-align:center;color:#999;margin:8px 0 18px; }
+
+.article-content p,
+.article-content div { color:#666;text-indent: 2em;line-height: 2; }
+.article  .hasNews { margin-top: 35px;color: #666;line-height: 30px;border-top: 1px solid #ccc; }
+.article  .hasNews a { color:#666; }
+
+.pinglun { padding:20px;background:#fff;margin-bottom:20px;}
+.pinglunTitle { display:flex;flex-direction: row;justify-content: space-between;}
+.pinglunTitle h3 { font-weight:bold;color:#000;}
+.inputText { font-size:0;border:1px solid #00a7eb;margin:10px 0;}
+.inputText textarea,
+.inputText button{ display:inline-block;height:50px;border:none;vertical-align: middle;font-size:16px; }
+.inputText textarea { width:80%;}
+.inputText button { width:20%;color:#fff;background:#00a7eb;}
+.longin { background:red;color:#fff;text-align:center;padding:10px;border-radius:5px;margin-top:10px; }
+.pinglunList >p { margin:20px 0;}
+.pinglunContent { line-height:2;border:1px solid #ccc;padding:10px;margin: 10px 0;}
