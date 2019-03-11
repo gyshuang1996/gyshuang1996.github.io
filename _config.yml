@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 theme: jekyll-theme-merlot
 title: gysµÄ²©¿Í
 description: github²âÊÔ²©¿Í
 author: gys
 language: zh-Hans
+=======
+theme: jekyll-theme-slate
+title: gysçš„åšå®¢
+description: githubæµ‹è¯•åšå®¢
+author: gys
+language: zh-Hans
+>>>>>>> 7b4ddd8b8c02e2a6d31612c8162681de2f28c01f
